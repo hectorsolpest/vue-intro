@@ -1,9 +1,9 @@
 <script setup>
-
+import Navbar from '@/components/Navbar.vue'
 </script>
 
 <template>
-  <h2>Vue Jobs</h2>
+  <navbar/>
 </template>
 
 <style scoped>
