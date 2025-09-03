@@ -1,24 +1,17 @@
-<script>
-  export default {
-    data(){
-      return{
-        name:'Vue Master',
-        status:true,
-        tasks:['task 1', 'task 2', 'task 3']
-      };
-    },
-    methods:{
-      changeStatus(){
-        if(this.status === true)
-        {
-          this.status = false
-        }else
-        {
-          this.status = true
-        }
-      }
-    }
-  }
+<script setup>
+import { ref } from 'vue';
+
+let name=ref('Vue Master')
+let status=ref(true)
+const tasks=ref(['task 1', 'task 2', 'task 3'])
+
+
+function changeStatus()
+{
+  status.value = status.value !== true;
+}
+
+
 </script>
 
 <template>
