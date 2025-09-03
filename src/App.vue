@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div></div>
+  <h2>Vue Jobs</h2>
 </template>
 
 <style scoped>
