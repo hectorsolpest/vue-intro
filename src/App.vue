@@ -5,7 +5,7 @@ import Hero from '@/components/Hero.vue'
 
 <template>
   <navbar/>
-  <hero/>
+  <hero />
 </template>
 
 <style scoped>
