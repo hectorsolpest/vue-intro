@@ -5,7 +5,7 @@ import Hero from '@/components/Hero.vue'
 
 <template>
   <navbar/>
-  <hero />
+  <hero title="Become a Vue Dev motherfucker" subtitle="Find a fucking job !!!"/>
 </template>
 
 <style scoped>
