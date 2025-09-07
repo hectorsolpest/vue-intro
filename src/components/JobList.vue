@@ -1,9 +1,14 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, reactive } from 'vue'
 import JobCard from '@/components/JobCard.vue'
 import axios from 'axios'
 
-const jobs = ref([])
+//state es igual a ref, se usa para reactividad pero solo para objetos
+//ref permite objetos y tipos primitivos, se puede hacer de ambas formas
+const state = reactive({
+  jobs:[],
+  isLoading: true,
+})
 defineProps({
   limit:{
     type:Number
@@ -17,10 +22,13 @@ defineProps({
 onMounted(async () =>{
   try {
     const response = await axios.get('http://localhost:5000/jobs')
-    jobs.value = response.data
+    state.jobs = response.data
   }
   catch (e) {
     console.log(e)
+  }
+  finally {
+    state.isLoading = false
   }
 })
 
@@ -33,7 +41,7 @@ onMounted(async () =>{
         Browse Jobs
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <job-card v-for="job in jobs.slice(0,limit || jobs.lenght)" :key="job.id" :job="job"/>
+        <job-card v-for="job in state.jobs.slice(0,limit || state.jobs.lenght)" :key="job.id" :job="job"/>
       </div>
     </div>
   </section>
