@@ -23,6 +23,9 @@ importers:
       vue-router:
         specifier: ^4.5.1
         version: 4.5.1(vue@3.5.21)
+      vue-spinner:
+        specifier: ^1.0.4
+        version: 1.0.4
     devDependencies:
       '@eslint/js':
         specifier: ^9.29.0
@@ -1912,6 +1915,9 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
+  vue-spinner@1.0.4:
+    resolution: {integrity: sha512-GNG2F+8BLX201JT/jUX+84Gsi3ZteVQwt9K7mues3ts9FcQ95dGn7uu6a5ndSxdYYUEzfh1KngZiOE0u+l4itA==}
+
   vue@3.5.21:
     resolution: {integrity: sha512-xxf9rum9KtOdwdRkiApWL+9hZEMWE90FHh8yS1+KJAiWYh+iGWV1FquPjoO9VUHQ+VIhsCXNNyZ5Sf4++RVZBA==}
     peerDependencies:
@@ -3756,6 +3762,8 @@ snapshots:
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.21
+
+  vue-spinner@1.0.4: {}
 
   vue@3.5.21:
     dependencies:
