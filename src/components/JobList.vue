@@ -1,9 +1,9 @@
 <script setup>
-import { ref } from 'vue'
-import jobsData from '@/jobs.json'
+import { onMounted, ref } from 'vue'
 import JobCard from '@/components/JobCard.vue'
-import { useRoute } from 'vue-router'
-const jobs = ref(jobsData)
+import axios from 'axios'
+
+const jobs = ref([])
 defineProps({
   limit:{
     type:Number
@@ -11,6 +11,16 @@ defineProps({
   showButton:{
     type:Boolean,
     default:false
+  }
+})
+
+onMounted(async () =>{
+  try {
+    const response = await axios.get('http://localhost:5000/jobs')
+    jobs.value = response.data
+  }
+  catch (e) {
+    console.log(e)
   }
 })
 
