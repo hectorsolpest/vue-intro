@@ -1,15 +1,33 @@
 <script setup>
 import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
 import axios from 'axios'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { onMounted, reactive } from 'vue'
+import { useToast } from 'vue-toastification'
 
 const route = useRoute()
+const router = useRouter()
+const toast = useToast()
+
 const jobId = route.params.id
 const state = reactive({
   jobs:{},
   isLoading:true,
 })
+const deleteJob = async () =>{
+  try {
+    const confirm = window.confirm('Are you sure to delete this job?')
+    if (confirm){
+      await axios.delete(`http://localhost:5000/jobs/${jobId}`)
+      toast.success('Job deleted successfully')
+      router.push('/jobs')
+    }
+  }
+  catch (e){
+    toast.error('Error: '+e)
+  }
+}
+
 onMounted(async () => {
   try {
     const response = await axios.get(`http://localhost:5000/jobs/${jobId}`)
@@ -94,7 +112,7 @@ onMounted(async () => {
               class="bg-green-500 hover:bg-green-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
             >Edit Job</RouterLink
             >
-            <button
+            <button @click="deleteJob"
               class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
             >
               Delete Job
