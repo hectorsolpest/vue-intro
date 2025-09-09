@@ -71,18 +71,18 @@
       }
     },
     {
-      "id": "d252",
       "type": "Part-Time",
-      "title": "Vue Junior",
+      "title": "Dev Vue Junior",
       "description": "werft",
       "salary": "$70K - $80K",
       "location": "ertertert",
       "company": {
-        "name": "ertert",
+        "name": "Spain",
         "description": "ertertertre",
         "contactEmail": "hectorsolpest@gmail.com",
         "contactPhone": "5565656"
-      }
+      },
+      "id": "d252"
     }
   ]
 }
