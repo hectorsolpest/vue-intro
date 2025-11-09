@@ -22,16 +22,6 @@ Vue.js.
 - **Heroicons** - Iconografía moderna
 - **Vite** - Build tool y dev server
 
-### Página Principal
-![Página Principal](./docs/images/home-view.png)
-*Vista principal con listado de trabajos destacados*
-
-### Detalle del Trabajo
-![Detalle](./docs/images/detail-view.png)
-*Vista detallada con información completa del puesto*
-
-
-
 ## 👨‍💻 Instructor y Recursos
 
 ### Curso por: **Traversy Media**
