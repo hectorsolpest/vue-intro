@@ -1,35 +1,52 @@
-# vue3
+# 💼 VueJobs - Portal de Empleo con Vue.js
 
-This template should help get you started developing with Vue 3 in Vite.
+## 📋 Descripción del Proyecto
 
-## Recommended IDE Setup
+**VueJobs** es una aplicación web moderna desarrollada como parte del curso de Vue.js 
+del canal **Traversy Media**. 
+Es un portal de empleo relacionados con el ecosistema 
+Vue.js.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🎯 Características Principales
 
-## Customize configuration
+### ✨ Funcionalidades Implementadas
+- ✅ **Listado de trabajos** - Visualización de ofertas laborales
+- ✅ **Diseño responsive** - Adaptable a todos los dispositivos
+- ✅ **Interfaz moderna** - Diseño limpio y profesional
+- ✅ **Navegación SPA** - Vue Router para navegación fluida
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### 🛠️ Tecnologías Utilizadas
+- **Vue 3** - Composition API
+- **Vue Router** - Navegación entre vistas
+- **Tailwind CSS** - Estilos y diseño
+- **Heroicons** - Iconografía moderna
+- **Vite** - Build tool y dev server
 
-## Project Setup
+### Página Principal
+![Página Principal](./docs/images/home-view.png)
+*Vista principal con listado de trabajos destacados*
 
-```sh
-npm install
-```
+### Detalle del Trabajo
+![Detalle](./docs/images/detail-view.png)
+*Vista detallada con información completa del puesto*
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
 
-### Compile and Minify for Production
+## 👨‍💻 Instructor y Recursos
 
-```sh
-npm run build
-```
+### Curso por: **Traversy Media**
+- 🎥 [Canal de YouTube](https://www.youtube.com/c/TraversyMedia)
 
-### Lint with [ESLint](https://eslint.org/)
+### Recursos Adicionales
+- [Vue.js Documentation](https://vuejs.org/guide/)
 
-```sh
-npm run lint
-```
+
+## 📄 Licencia
+
+Este proyecto es educativo y parte del curso de Vue.js de Traversy Media. Distribuido bajo la licencia MIT.
+
+---
+
+**Desarrollado con ❤️ y Vue.js**  
+*Curso completo disponible en [Traversy Media](https://www.youtube.com/c/TraversyMedia)*
+
