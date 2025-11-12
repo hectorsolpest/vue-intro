@@ -5,7 +5,7 @@ import JobList from '@/components/JobList.vue'
 </script>
 
 <template>
-  <hero title="Become a Vue Dev motherfucker" subtitle="Find a fucking job !!!"/>
+  <hero title="Become a Vue Dev" subtitle="Find a job !!!"/>
   <home-cards/>
   <job-list :limit="3" :show-button="true"/>
 </template>

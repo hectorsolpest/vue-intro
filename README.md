@@ -21,6 +21,15 @@ Vue.js.
 - **Tailwind CSS** - Estilos y diseño
 - **Heroicons** - Iconografía moderna
 - **Vite** - Build tool y dev server
+- **Json Server** - Base de datos local
+
+## 📸 Capturas de Pantalla
+### Formulario de Registro
+![Home](./capturas/Home.PNG)
+
+### Vista de Resultado
+![Jobs](./capturas/Jobs.PNG)
+
 
 ## 👨‍💻 Instructor y Recursos
 
